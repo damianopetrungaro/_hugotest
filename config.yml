@@ -1,0 +1,17 @@
+---
+baseURL: "http://conventional-commits.org/"
+languageCode: "en-us"
+title: "Conventional Commits"
+theme: "conventional-commits"
+
+defaultContentLanguageInSubdir: true
+defaultContentLanguage: "en"
+languages:
+  en:
+    weight: 1
+    params:
+      LanguageName: "English"
+  it:
+    weight: 2
+    params:
+      LanguageName: "Italian"

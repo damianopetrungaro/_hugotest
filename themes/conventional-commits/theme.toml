@@ -1,0 +1,15 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/gohugoio/hugoThemes#themetoml for an example
+
+name = "Conventional Commits"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "Theme used by conventional commits organization"
+homepage = "https://conventionalcommits.org/"
+tags = []
+features = []
+min_version = "0.41"
+
+[author]
+  name = ""
+  homepage = ""
