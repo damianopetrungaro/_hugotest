@@ -1,0 +1,54 @@
+baseURL: '/'
+languageCode: en-us
+theme: conventional-commits
+defaultContentLanguageInSubdir: true
+defaultContentLanguage: "en"
+
+# Global parameters
+params:
+  license:
+    title: License
+    action:
+      label: Creative Commons - CC BY 3.0
+      url: 'https://creativecommons.org/licenses/by/3.0/'
+
+  footer:
+    logos:
+    - name: github
+      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+
+# Languages parameters
+languages:
+  en:
+    weight: 1
+    languageName: "English"
+    title: Conventional Commits
+    description: A specification made for write standardized and useful commit messages
+    actions:
+    - label: Read the specs
+      url: '#Specification'
+    - label: GitHub
+      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+    versions:
+      current: v1.0.0-beta.2
+      list:
+      - v1.0.0-beta.2
+      - v1.0.0-beta.1
+      - v1.0.0-beta
+
+  it:
+    weight: 2
+    languageName: "Italian"
+    title: Commit Convenzionali
+    description: Una specifica bla bla bla bla
+    actions:
+    - label: Leggi la specifica
+      url: '#Specifica'
+    - label: GitHub
+      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+    versions:
+      current: v1.0.0-beta.2
+      list:
+      - v1.0.0-beta.2
+      - v1.0.0-beta.1
+      - v1.0.0-beta

@@ -1,9 +1,15 @@
+<!DOCTYPE html>
 <html>
-<body>
-{{ partial "header.html" . }}
-<div id="content">
-{{ .Content }}
-</div>
+{{- partial "head.html" . -}}
+<body class="conventional-commits--loading">
+{{- partial "header.html" . -}}
+{{- partial "welcome.html" . -}}
+<main>
+  <article class="container markdown-body">
+    {{.Content}}
+  </article>
+</main>
+{{- partial "footer.html" . -}}
+{{- partial "scripts.html" . -}}
 </body>
-{{ partial "footer.html" . }}
 </html>
