@@ -54,13 +54,24 @@
     position: absolute;
     top: 100%;
     left: 50%;
-    transform: translate(-50%, $dropdown-options-space-from-label);
+    transform: translate(-50%, 0);
     list-style: none;
     background-color: $dropdown-options-background-color;
     border-radius: $dropdown-border-radius;
-    overflow: hidden;
     box-shadow: $shadow-soft;
     animation: hide $dropdown-animation-timing/2 ease forwards;
+    &:before {
+      content: '';
+      width: 0;
+      height: 0;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      border-style: solid;
+      border-width: 0 $dropdown-arrow-size ($dropdown-arrow-size/2) $dropdown-arrow-size;
+      border-color: transparent transparent $dropdown-options-background-color transparent;
+      transform: translate(-50%, -100%);
+    }
   }
 
   &__option {
