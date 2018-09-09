@@ -2,7 +2,6 @@
 draft: false
 ---
 
-
 # Conventional Commits 1.0.0-beta
 
 ## Summary
@@ -27,10 +26,10 @@ The commit message should be structured as follows:
 The commit contains the following structural elements, to communicate intent to the
 consumers of your library:
 
-1. **fix:** a commit of the _type_ `fix` patches a bug in your codebase (this correlates with [`PATCH`](http://semver.org/#summary) in semantic versioning).
-2. **feat:** a commit of the _type_ `feat` introduces a new feature to the codebase (this correlates
+1.**fix:** a commit of the _type_ `fix` patches a bug in your codebase (this correlates with [`PATCH`](http://semver.org/#summary) in semantic versioning).
+1.**feat:** a commit of the _type_ `feat` introduces a new feature to the codebase (this correlates
   with [`MINOR`](http://semver.org/#summary) in semantic versioning).
-3. **BREAKING CHANGE:** a commit that has the text `BREAKING CHANGE:` at the beginning of its optional body or footer section introduces a breaking API change (correlating with [`MAJOR`](http://semver.org/#summary) in semantic versioning). A breaking change can be
+1.**BREAKING CHANGE:** a commit that has the text `BREAKING CHANGE:` at the beginning of its optional body or footer section introduces a breaking API change (correlating with [`MAJOR`](http://semver.org/#summary) in semantic versioning). A breaking change can be
   part of either a `fix:` or `feat:` _type_ commit.
 
 <br />
@@ -60,26 +59,26 @@ changes that they make.
 By introducing this convention, we create a common language that makes it easier to
 debug issues across project boundaries.
 
-## Conventional Commits Specification
+## Specification
 
 The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “MAY”, and “OPTIONAL” in this document are to be interpreted as described in [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
 
-1. commits MUST be prefixed with a type, which consists of a noun, `feat`, `fix`, etc.,
+1.commits MUST be prefixed with a type, which consists of a noun, `feat`, `fix`, etc.,
    followed by a colon and a space.
-2. the type `feat` MUST be used when a commit adds a new feature to your application
+1.the type `feat` MUST be used when a commit adds a new feature to your application
   or library.
-3. the type `fix` MUST be used when a commit represents a bug fix for your application.
-4. an optional scope MAY be provided after a type. A scope is a phrase describing
+1.the type `fix` MUST be used when a commit represents a bug fix for your application.
+1.an optional scope MAY be provided after a type. A scope is a phrase describing
   a section of the codebase enclosed in parenthesis, e.g., `fix(parser):`
-5. A description MUST immediately follow the type/scope prefix.
+1.A description MUST immediately follow the type/scope prefix.
   The description is a short description of the pull request, e.g.,
   _fix: array parsing issue when multiple spaces were contained in string._
-6. A longer commit body MAY be provided after the short description. The body MUST
+1.A longer commit body MAY be provided after the short description. The body MUST
    begin one blank line after the description.
-7. A footer MAY be provided one blank line after the body. The footer SHOULD contain
+1.A footer MAY be provided one blank line after the body. The footer SHOULD contain
    additional meta-information about the pull-request (such as the issues it fixes, e.g., `fixes #13, #5`).
-8. Breaking changes MUST be indicated at the very beginning of the footer or body section of a commit. A breaking change MUST consist of the uppercase text `BREAKING CHANGE`, followed by a colon and a space.
-9. A description MUST be provided after the `BREAKING CHANGE: `, describing what
+1.Breaking changes MUST be indicated at the very beginning of the footer or body section of a commit. A breaking change MUST consist of the uppercase text `BREAKING CHANGE`, followed by a colon and a space.
+1.A description MUST be provided after the `BREAKING CHANGE: `, describing what
   has changed about the API, e.g., _BREAKING CHANGE: environment variables now take precedence over config files._
 10. types other than `feat` and `fix` MAY be used in your commit messages.
 

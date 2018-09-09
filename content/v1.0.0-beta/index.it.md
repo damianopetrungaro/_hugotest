@@ -26,9 +26,9 @@ I messaggi dei commit dovrebbero seguire la seguente struttura:
 Il commit contiene i seguenti elementi strutturali, allo scopo di comunicarne
 l'intento al consumatore della libreria:
 
-1. **fix:** un commit di _tipo_ `fix` risolve un errore nel codice (correlato al [`PATCH`](http://semver.org/#summary) in un versionamento semver).
-2. **feat:**  un commit di _tipo_ `feat` introduce una nuova funzionalità al codice (correlato al [`MINOR`](http://semver.org/#summary) in un versionamento semver).
-3. **BREAKING CHANGE:** un commit che contiente il testo `BREAKING CHANGE:` all'inizio delle sezioni opzionali _corpo_ o _piè di pagina_, introduce una breaking API change (correlato al [`MAJOR`](http://semver.org/#summary) in un versionamento semver).
+1.**fix:** un commit di _tipo_ `fix` risolve un errore nel codice (correlato al [`PATCH`](http://semver.org/#summary) in un versionamento semver).
+1.**feat:**  un commit di _tipo_ `feat` introduce una nuova funzionalità al codice (correlato al [`MINOR`](http://semver.org/#summary) in un versionamento semver).
+1.**BREAKING CHANGE:** un commit che contiente il testo `BREAKING CHANGE:` all'inizio delle sezioni opzionali _corpo_ o _piè di pagina_, introduce una breaking API change (correlato al [`MAJOR`](http://semver.org/#summary) in un versionamento semver).
 Una _breaking change_ può essere parte di entrambi i _tipi_ `fix:` w `feat:`.
 <br />
 Un _contesto_ potrebbe essere aggiunto al _tipo_ di commit, al fine di offrire ulteriori informazioni contestuali.
@@ -57,29 +57,29 @@ di descrivere nei messaggi dei commit qualsiasi feature, fix e breaking change l
 Introducendo questa convenzione, si crea un linguaggio comune che rende più semplice
 rimuovere errori tra progetti.
 
-## Specifica Commit Convenzionali
+## Specifica
 
 Le parole “DEVE”, “NON DEVE”, “RICHIESTO”, “DOVRÀ”, “NON DOVRÀ”, “DOVREBBE”, “NON DOVREBBE”, “RACCOMANDATO”, “POTREBBE” e “OPZIONALE” devo essere interpretata come da specifica [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
 
-1. Un commit DEVE iniziare con un _tipo_, il quale consiste in un sostantivo, `feat`, `fix`, etc.,
+1.Un commit DEVE iniziare con un _tipo_, il quale consiste in un sostantivo, `feat`, `fix`, etc.,
    seguito dai due punti ed uno spazio.
-2. Il _tipo_ `feat` DEVE essere usato quando un commit aggiunge una funzionalità
+1.Il _tipo_ `feat` DEVE essere usato quando un commit aggiunge una funzionalità
    all'applicazione o libreria.
-3. Il _tipo_ `fix` DEVE essere usato quando un commit corregge un errore all'applicazione o libreria.
-4. Un _contesto_ opzionale POTREBBE essere fornito dopo il _tipo_.
+1.Il _tipo_ `fix` DEVE essere usato quando un commit corregge un errore all'applicazione o libreria.
+1.Un _contesto_ opzionale POTREBBE essere fornito dopo il _tipo_.
    Un _contesto_ rappresenta una sezione dell'applicazione o libreria, il contentuo va racchiusa tra delle parentesi.
    Es: `fix(parser):`
-5. Una _descrizione_ DEVE seguire immediatamente il _tipo_ (con eventuale _contesto_).
+1.Una _descrizione_ DEVE seguire immediatamente il _tipo_ (con eventuale _contesto_).
    Per _descrizione_ si intende una breve spiegazione della pull request.
    Es: _fix: array parsing issue when multiple spaces were contained in string._
-6. Un _corpo_ del commit più lungo POTREBBE essere aggiunto dopo una breve _descrizione_.
+1.Un _corpo_ del commit più lungo POTREBBE essere aggiunto dopo una breve _descrizione_.
    Il _corpo_ DEVE inizare dopo una linea vuota dalla _descrizione_.
-7. Un _piè di pagina_ POTREBBE essere aggiunto inserendo una linea vuota dopo il _corpo_.
+1.Un _piè di pagina_ POTREBBE essere aggiunto inserendo una linea vuota dopo il _corpo_.
    Il _piè di pagina_ DOVREBBE contenere ulteriori informazioni riguardo la pull request (come le issue che risolve,
    Es: `fixes #13, #5`).
-8. Una _breaking changes_ DEVE essere indicata all'inizio delle sezioni _piè di pagina_ o del _corpo_ del commit.
+1.Una _breaking changes_ DEVE essere indicata all'inizio delle sezioni _piè di pagina_ o del _corpo_ del commit.
    Una _breaking change_ DEVE essere scritta in maiuscolo `BREAKING CHANGE`, seguita dai due punti ed uno spazio.
-9. Una descrizione DEVE essere aggiunta dopo il testo `BREAKING CHANGE: `, descrivendo il cambiamento delle API.
+1.Una descrizione DEVE essere aggiunta dopo il testo `BREAKING CHANGE: `, descrivendo il cambiamento delle API.
    Es: _BREAKING CHANGE: environment variables now take precedence over config files._
 10. Un commit POTREBBE utilizzare altri _tipi_ al di fuori di `feat` e `fix` nel messagio.
 

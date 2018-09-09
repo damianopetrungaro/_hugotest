@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  app:
+    image: marcacohen/hugo-image:latest
+    ports:
+     - "1313:1313"
+    entrypoint: ["make", "all-dev"]
+    working_dir: /src/
+    volumes:
+      - ./:/src/

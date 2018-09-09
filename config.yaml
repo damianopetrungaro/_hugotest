@@ -26,7 +26,7 @@ languages:
     description: A specification made for write standardized and useful commit messages
     actions:
     - label: Read the specs
-      url: '#Specification'
+      url: '#specification'
     - label: GitHub
       url: 'https://github.com/conventional-commits/conventionalcommits.org'
     versions:
@@ -40,10 +40,10 @@ languages:
     weight: 2
     languageName: "Italian"
     title: Commit Convenzionali
-    description: Una specifica bla bla bla bla
+    description: Una specifica fatta per scrivere messaggi di commit standardizzati e utili
     actions:
     - label: Leggi la specifica
-      url: '#Specifica'
+      url: '#specifica'
     - label: GitHub
       url: 'https://github.com/conventional-commits/conventionalcommits.org'
     versions:
@@ -52,3 +52,51 @@ languages:
       - v1.0.0-beta.2
       - v1.0.0-beta.1
       - v1.0.0-beta
+
+  pl:
+    weight: 2
+    languageName: "Polish"
+    title: Konwencjonalne Commity
+    description: Specyfikacja służąca do pisania standardowych i użytecznych komunikatów zatwierdzania
+    actions:
+    - label: Przeczytaj specyfikację
+      url: '#specyfikacja'
+    - label: GitHub
+      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+    versions:
+      current: v1.0.0-beta.2
+      list:
+      - v1.0.0-beta.2
+      - v1.0.0-beta.1
+      - v1.0.0-beta
+  zh:
+    weight: 2
+    languageName: "Chinese"
+    title: 约定式提交
+    description: 用于编写标准化和有用的提交消息的规范
+    actions:
+    - label: 阅读规范
+      url: '#约定式提交规范'
+    - label: GitHub
+      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+    versions:
+      current: v1.0.0-beta.2
+      list:
+      - v1.0.0-beta.2
+      - v1.0.0-beta.1
+      - v1.0.0-beta
+
+  es:
+    weight: 2
+    languageName: "Spanish"
+    title: Commits Convencionales
+    description: Una especificación hecha para escribir mensajes de compromiso estandarizados y útiles
+    actions:
+    - label: Lee la especificación
+      url: '#especificación'
+    - label: GitHub
+      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+    versions:
+      current: v1.0.0-beta.2
+      list:
+      - v1.0.0-beta.2

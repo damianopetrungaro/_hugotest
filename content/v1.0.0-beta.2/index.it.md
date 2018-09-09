@@ -1,7 +1,6 @@
 ---
 draft: false
-aliases:
-    - /it
+aliases: ["/it/"]
 ---
 
 # Commit Convenzionali 1.0.0-beta.2
@@ -28,11 +27,11 @@ I messaggi dei commit dovrebbero seguire la seguente struttura:
 Il commit contiene i seguenti elementi strutturali, allo scopo di comunicarne
 l'intento al consumatore della libreria:
 
-1. **fix:** un commit di _tipo_ `fix` risolve un errore nel codice (correlato al [`PATCH`](http://semver.org/#summary) in un versionamento semver).
-2. **feat:**  un commit di _tipo_ `feat` introduce una nuova funzionalità al codice (correlato al [`MINOR`](http://semver.org/#summary) in un versionamento semver).
-3. **BREAKING CHANGE:** un commit che contiente il testo `BREAKING CHANGE:` all'inizio delle sezioni opzionali _corpo_ o _piè di pagina_, introduce una breaking API change (correlato al [`MAJOR`](http://semver.org/#summary) in un versionamento semver).
+1.**fix:** un commit di _tipo_ `fix` risolve un errore nel codice (correlato al [`PATCH`](http://semver.org/#summary) in un versionamento semver).
+1.**feat:**  un commit di _tipo_ `feat` introduce una nuova funzionalità al codice (correlato al [`MINOR`](http://semver.org/#summary) in un versionamento semver).
+1.**BREAKING CHANGE:** un commit che contiente il testo `BREAKING CHANGE:` all'inizio delle sezioni opzionali _corpo_ o _piè di pagina_, introduce una breaking API change (correlato al [`MAJOR`](http://semver.org/#summary) in un versionamento semver).
 Una _breaking change_ può essere parte di un commit di qualsiasi _tipo_. Es: I tipi `fix:`, `feat:` & `chore:` sono tutti validi, cosí come qualsiasi altro _tipo_.
-4. Extra: sono ammessi ulteriori _tipi_ oltre `fix:` e`feat:`, per esempio [commitlint-config-conventional](https://github.com/marionebl/commitlint/tree/master/%40commitlint/config-conventional) (che si basa sulla [convenzione Angular](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)) raccomanda `chore:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:`, ed altri.
+1.Extra: sono ammessi ulteriori _tipi_ oltre `fix:` e`feat:`, per esempio [commitlint-config-conventional](https://github.com/marionebl/commitlint/tree/master/%40commitlint/config-conventional) (che si basa sulla [convenzione Angular](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)) raccomanda `chore:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:`, ed altri.
 Noi raccomandiamo anche `improvement` per commit che migliorano un'implementazione esistente senza aggiungere nuove funzionalità o risolvere un errore.
 Notare che questi _tipi_ non sono mantenuti da questa specifica, e non hanno un effetto sul versionamento semver (a meno che non introducano una _BREAKING CHANGE_, il quale NON è raccomandato).
 <br />
@@ -88,29 +87,29 @@ di descrivere nei messaggi dei commit qualsiasi feature, fix e breaking change l
 Introducendo questa convenzione, si crea un linguaggio comune che rende più semplice
 rimuovere errori tra progetti.
 
-## Specifica Commit Convenzionali
+## Specifica
 
 Le parole “DEVE”, “NON DEVE”, “RICHIESTO”, “DOVRÀ”, “NON DOVRÀ”, “DOVREBBE”, “NON DOVREBBE”, “RACCOMANDATO”, “POTREBBE” e “OPZIONALE” devo essere interpretata come da specifica [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
 
-1. Un commit DEVE iniziare con un _tipo_, il quale consiste in un sostantivo, `feat`, `fix`, etc.,
+1.Un commit DEVE iniziare con un _tipo_, il quale consiste in un sostantivo, `feat`, `fix`, etc.,
    seguito dai due punti ed uno spazio.
-2. Il _tipo_ `feat` DEVE essere usato quando un commit aggiunge una funzionalità
+1.Il _tipo_ `feat` DEVE essere usato quando un commit aggiunge una funzionalità
    all'applicazione o libreria.
-3. Il _tipo_ `fix` DEVE essere usato quando un commit corregge un errore all'applicazione o libreria.
-4. Un _contesto_ opzionale POTREBBE essere fornito dopo il _tipo_.
+1.Il _tipo_ `fix` DEVE essere usato quando un commit corregge un errore all'applicazione o libreria.
+1.Un _contesto_ opzionale POTREBBE essere fornito dopo il _tipo_.
    Un _contesto_ rappresenta una sezione dell'applicazione o libreria, il contentuo va racchiusa tra delle parentesi.
    Es: `fix(parser):`
-5. Una _descrizione_ DEVE seguire immediatamente il _tipo_ (con eventuale _contesto_).
+1.Una _descrizione_ DEVE seguire immediatamente il _tipo_ (con eventuale _contesto_).
    Per _descrizione_ si intende una breve spiegazione riguardo la modifica al codice.
    Es: _fix: array parsing issue when multiple spaces were contained in string._
-6. Un _corpo_ del commit più lungo POTREBBE essere aggiunto dopo una breve _descrizione_, aggiungendo ulteriori informazioni contestuali riguardo le modifiche apportate al codice.
+1.Un _corpo_ del commit più lungo POTREBBE essere aggiunto dopo una breve _descrizione_, aggiungendo ulteriori informazioni contestuali riguardo le modifiche apportate al codice.
    Il _corpo_ DEVE inizare dopo una linea vuota dalla _descrizione_.
-7. Un _piè di pagina_ POTREBBE essere aggiunto inserendo una linea vuota dopo il _corpo_.
+1.Un _piè di pagina_ POTREBBE essere aggiunto inserendo una linea vuota dopo il _corpo_.
    Il _piè di pagina_ DOVREBBE contenere ulteriori informazioni riguardo le modifiche apportate al codice (come le issue che risolve,
    Es: `fixes #13, #5`).
-8. Una _breaking changes_ DEVE essere indicata all'inizio delle sezioni _piè di pagina_ o del _corpo_ del commit.
+1.Una _breaking changes_ DEVE essere indicata all'inizio delle sezioni _piè di pagina_ o del _corpo_ del commit.
    Una _breaking change_ DEVE essere scritta in maiuscolo `BREAKING CHANGE`, seguita dai due punti ed uno spazio.
-9. Una descrizione DEVE essere aggiunta dopo il testo `BREAKING CHANGE: `, descrivendo il cambiamento delle API.
+1.Una descrizione DEVE essere aggiunta dopo il testo `BREAKING CHANGE: `, descrivendo il cambiamento delle API.
    Es: _BREAKING CHANGE: environment variables now take precedence over config files._
 10. Il _piè di pagina_ DEVE solo contentere `BREAKING CHANGE`, collegamenti esterni, riferimenti alle issueed ulteriori meta-informazioni.
 11. Un commit POTREBBE utilizzare altri _tipi_ al di fuori di `feat` e `fix` nel messagio.
